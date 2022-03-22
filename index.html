@@ -34,10 +34,18 @@
           height: auto;
           margin-bottom: 16px;
         }
+        .footer {
+          color: rgb(80, 80, 80);
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          font-size: max(min(1vw, 14px), 8px);
+          cursor: default;
+        }
         #bottom {
-            position: absolute;
-            bottom: 0;
-            width: 99%;
+          position: absolute;
+          bottom: 0;
+          width: 99%;
         }
         #link {
           cursor: pointer;
@@ -46,28 +54,33 @@
           text-decoration: none;
         }
         #background {
-            height: 55px;
-            background-color: black; /* For browsers that do not support gradients */
-            background-image: linear-gradient(to right, rgb(6, 6, 6), black, black, rgb(6, 6, 6));
+          height: 55px;
+          background-color: black; /* For browsers that do not support gradients */
+          background-image: linear-gradient(to right, rgb(6, 6, 6), black, black, rgb(6, 6, 6));
         }
         </style>
     </head>
-<body id="background">
     
-    <div class="wrapper" style="display: inline-block; min-width: 100%;">
-        <img src="images/logo.jpg" class="logo"> 
-        <div id="bottom">
-        <p class="header">CONTACT</p>
-        <table class="table" border="0">
-            <tr>
-                <td><a id="link" target="_blank" href="https://www.youtube.com/channel/UCQfWnxYmtt--yP_XCBoznyg" class="paragraph">YOUTUBE | </p></td>
-                <td><a id="link" target="_blank" href="https://www.facebook.com/clamoris/" class="paragraph">FACEBOOK | </p></td>
-                <!-- <td><a id="link" target="_blank" href="https://www.instagram.com" class="paragraph">INSTAGRAM | </p></td> -->
-                <td><a id="link" target="_blank" href="https://clamoris.bandcamp.com" class="paragraph">BANDCAMP | </p></td>
-                <td><a id="link" target="_blank" href="https://soundcloud.com/clamoris" class="paragraph">SOUNDCLOUD</p></td>
-            </tr>
-        </table>
-    </div>
-</div>
-</body>
+    <body id="background">        
+        <div class="wrapper" style="display: inline-block; min-width: 100%;">
+          <img src="images/logo.jpg" class="logo"> 
+
+          <!-- Contact & copyright -->
+          <div id="bottom">
+            <p class="header">CONTACT</p>
+            <table class="table" border="0">
+              <tr>
+                  <td><a id="link" target="_blank" href="https://www.youtube.com/channel/UCQfWnxYmtt--yP_XCBoznyg" class="paragraph">YOUTUBE | </p></td>
+                  <td><a id="link" target="_blank" href="https://www.facebook.com/clamoris/" class="paragraph">FACEBOOK | </p></td>
+                  <!-- <td><a id="link" target="_blank" href="https://www.instagram.com" class="paragraph">INSTAGRAM | </p></td> -->
+                  <td><a id="link" target="_blank" href="https://clamoris.bandcamp.com" class="paragraph">BANDCAMP | </p></td>
+                  <td><a id="link" target="_blank" href="https://soundcloud.com/clamoris" class="paragraph">SOUNDCLOUD</p></td>
+              </tr>
+              <tr>
+                <div class="footer" id=bottom>© 2022 Clamoris, All rights reserved</div>
+              </tr>
+            </table>
+          </div>
+      </div>
+    </body>
 </html>
