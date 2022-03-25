@@ -44,6 +44,7 @@
         }
         a {
           text-decoration: none;
+          color: lightgray;
         }
         #background {
           height: 55px;
@@ -57,21 +58,39 @@
         <div class="wrapper" style="display: inline-block; min-width: 100%;">
           <img src="images/logo.jpg" class="logo"> 
 
-          <!-- Contact & copyright -->
-          <div id="bottom">
+          <div>
+              <!-- Content -->
+          </div>
+
+          <div id="bottom" >
             <table class="table" border="0">
+              <!-- Contact -->
               <tr>
                   <td><a id="link" target="_blank" href="https://www.youtube.com/channel/UCQfWnxYmtt--yP_XCBoznyg" class="paragraph">YOUTUBE | </p></td>
                   <td><a id="link" target="_blank" href="https://www.facebook.com/clamoris/" class="paragraph">FACEBOOK | </p></td>
-                  <!-- <td><a id="link" target="_blank" href="https://www.instagram.com" class="paragraph">INSTAGRAM | </p></td> -->
+                  <td><a id="link" target="_blank" href="https://www.instagram.com" class="paragraph">INSTAGRAM | </p></td>
                   <td><a id="link" target="_blank" href="https://clamoris.bandcamp.com" class="paragraph">BANDCAMP | </p></td>
                   <td><a id="link" target="_blank" href="https://soundcloud.com/clamoris" class="paragraph">SOUNDCLOUD</p></td>
               </tr>
-              <tr>
-                <div class="footer" id=bottom>© 2022 Clamoris, All rights reserved</div>
-              </tr>
+
+              <!-- Email -->
+              <tr><td colspan="5"><div class="paragraph" id="email" /></td></tr>
+
+              <!-- Empty space -->
+              <tr><td><div style="min-height: 16px"></div></td></tr>
+
+              <!-- Copyright-->
+              <tr><td colspan="5"><div class="footer">© 2022 Clamoris, All rights reserved</div></td></tr>
             </table>
           </div>
       </div>
     </body>
+
+    <script type="text/javascript">
+      // E-mail script to prevent bots
+      var user = 'info',
+      domain = 'clamoris.fi',
+      element = document.getElementById('email');
+      element.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
+    </script>
 </html>
